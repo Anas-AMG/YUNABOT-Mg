@@ -1,14 +1,9 @@
-let handler  = async (m, { conn, usedPrefix }) => {
-conn.sendHydrated(m.chat, `╭━━━━[ 𝙑𝙀𝙍𝘿𝘼𝘿 🤔 ]━━━━⬣\n*“${pickRandom(global.bucin)}”*\n╰━━━━━━[ ${vs} ]━━━━━⬣`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣 🧐', `${usedPrefix}reto`],
-['𝙏𝙤𝙥𝙨 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 🏆', `${usedPrefix}top`],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `${usedPrefix}menu`]
-], m,)}
-
-handler.help = ['verdad']
+let handler  = async (m, { conn }) => {
+conn.reply(m.chat,`*────「 سوأل 」─────┌*\n*“${pickRandom(global.verdad)}”*\n*└────「 YUNA BOT 」─*`, m)
+}
+handler.help = ['تك']
 handler.tags = ['fun']
-handler.command = /^verdad/i
-handler.fail = null
+handler.command = /^تك/i
 export default handler
 
 function pickRandom(list) {
@@ -16,159 +11,314 @@ function pickRandom(list) {
 }
 
 global.verdad = [
-"¿Alguna vez te ha gustado alguien? ¿Cuánto tiempo?",
-  "Si es posible o si quieres, en gc / fuera de gc, ¿con quién harás amistad? (Puede ser diferente / del mismo tipo)",
-  "¿cual es tu mas grande miedo?",
-  "¿Alguna vez te ha gustado alguien y has sentido a esa persona como tú también?",
-  "¿Cuál es el nombre del exnovio de tu amiga que una vez te gustó en secreto?",
-  "¿Alguna vez has robado el dinero de tu madre o de tu padre? ¿La razón?",
-  "lo que te hace feliz cuando estás triste",
-  "¿Alguna vez has sido amor no correspondido? ¿Si has estado con quién? ¿Cómo se siente brou?",
-  "¿Alguna vez has tenido una aventura con alguien?",
-  "lo más temido",
-  "quién es la persona más influyente en tu vida",
-  "qué orgullo tienes este año",
-  "quién es la persona que puede enfermarte",
-  "quien es la persona que alguna vez te puso cachondo",
-  "(para los musulmanes) ¿nunca has rezado en todo el día?",
-  "¿Quién es el más cercano a su tipo de pareja ideal aquí",
-  "¿Con quién te gusta jugar?",
-  "¿Alguna vez has rechazado a alguien? ¿Por qué?",
-  "Menciona el incidente que te hizo daño y que aún recuerdas",
-  "¿Qué logros has obtenido este año?",
-  "¿Cuál es tu peor hábito en la escuela?", "¿Qué programa de televisión odias más? ¡Da la razón!", "¿Cuál es el vestido más feo (en su opinión) que ha usado y cuándo lo usó?", "¿Qué es lo peor (chisme) que has dicho sobre tu amigo?","¿Qué es lo más vergonzoso de ti?"," ¿Qué es lo primero que ves cuando miras a otra persona (del sexo opuesto)?", 
-"¿Qué es lo primero que te viene a la mente cuando te miras al espejo?","¿Que es lo mas tonto que has hecho en tu vida?"," ¿Cuál es el peor sueño que has tenido?"," ¿Cuál es el sueño más loco que puedes recordar hasta ahora?",
-" ¿Cuál es tu peor rasgo en tu opinión?", 
-" ¿Qué rasgo te gustaría cambiar de ti mismo?", 
-" ¿Qué rasgo te gustaría cambiar en tu amigo?", 
-" ¿Qué harías si tu novio te dijera que tienes mala nariz o dedos?", 
-" ¿En qué piensas antes de dormir? ej .: fantasear con una pareja, etc.", 
-"¿Qué crees que se destaca más de ti?"," ¿Qué parte del cuerpo de tu amigo te gusta más y desearías tener?", 
-"¿Qué parte de tu cuerpo odias más?"," De todas las clases de la escuela, ¿a qué clase le gustaría ingresar y qué clase le gustaría evitar?", 
-"¡Describe a tu amigo más cercano!"," ¡Descríbete en una palabra!"," ¿Qué películas y canciones te han hecho llorar?", 
-" ¿Qué es algo que has mantenido en secreto hasta ahora y nadie lo ha descubierto?", 
-" ¿Qué es lo más romántico que alguien (del sexo opuesto) te ha hecho o regalado?", 
-"¿Qué es lo más desagradable que has experimentado?", 
-" Si nacieras de nuevo y tuvieras que ser uno de tus amigos, ¿a quién elegirías ser?", 
-" Si tienes superpoder / superpoder, ¿qué quieres hacer?", 
-" Si el apocalipsis llega pronto, ¿qué haces?", 
-" Si te pidieran que te sometieras a una cirugía plástica con una muestra de rostro de tu compañero de clase, ¿a quién imitarías?", 
-" Alguna vez has robado algo?", 
-" ¿Tiene miedo a morir? ¿Por qué?", 
-" ¿Cuándo fue la última vez que lloraste y por qué?", 
-" ¿Cuáles son tus habilidades especiales?", 
-" ¿Cómo te puede gustar la persona que te gusta?", 
-" ¿Cuál crees que es un buen rasgo de tu amigo más cercano que él o ella no conozca?", 
-" ¿Con qué tipo de persona te gustaría casarte algún día?", 
-" En tu opinión, ¿cuál es el trabajo más atractivo para el amigo que está sentado a tu lado? ¿Y por qué?", 
-" ¿Con quién quieres intercambiar por un día? (amigos más cercanos que ambos conocen) y por qué", 
-" ¿Alguna vez has esperado en secreto que la relación de alguien con su novia se rompiera? ¿Quién?", 
-" ¿Prefiere AMIGAS o AMIGOS? ¿Por qué?", 
-" ¿Qué cita recuerdas más y te gusta?", 
-" ¿Qué secretos nunca les has contado a tus amigos hasta ahora?", 
-" ¿Quiénes son sus verdaderos modelos a seguir?", 
-" ¿Cuál de tus amigos crees que es matre?", 
-" ¿Cuál de tus amigos crees que tiene menos corte de pelo?", 
-" ¿Cuál de tus amigos es el más fotogénico? ", 
-" ¿Quién es tu mejor ex? ¡¿Y por qué rompieron ?!", 
-" ¿Cómo se llama el artista con el que hablaste en secreto?", 
-" ¿Cómo se llamaba el profesor que te gustaba?", 
-" ¿Cuál es el nombre de la exnovia de tu amigo que te ha gustado en secreto?", 
-" ¿Cuál es el nombre de la persona (del sexo opuesto) que crees que sería divertido ser novia?", 
-" ¿Cuál es el nombre de la persona que odias, pero crees que le gustas a esa persona (no necesariamente del sexo opuesto)?", 
-" ¿Cuál es el nombre de la persona a la que has estado señalando en secreto?", 
-" ¿Quién es la persona (del sexo opuesto) que más se te pasa por la cabeza?", 
-" ¿Quién es la persona más molesta entre tus amigos? ¡la razón!", 
-" ¿A quién de tus amigos crees que debería renovarse?", 
-" ¿Quién está más cerca de tu pareja ideal aquí?", 
-"Padre o madre", 
-"La parte del cuerpo que no te gusta", 
-"¿Alguna vez has hecho trampa?", 
-"¿Alguna vez te han besado?", 
-"¿Qué es lo primero que harías si te despertaras como del sexo opuesto?", 
-"¿Alguna vez has dejado que alguien más se meta en problemas por algo que hiciste?", 
-"¿Qué es lo más embarazoso que has hecho en tu vida?", 
-" ¿Cuál es la razón más ridícula por la que has roto con alguien?", 
-" ¿Cuál es el peor hábito que tienes?", 
-" ¿Cuál crees que es tu mejor característica? ¿Y que es lo peor?", 
-" ¿Cuál es la cosa más valiente que has hecho?", 
-" ¿Cuándo fue la última vez que mojaste la cama?", 
-" ¿Con qué sueñas más sobre dormir?", 
-" Si va a ganar dinero ilegalmente, ¿cómo lo hace?", 
-" ¿Qué cosas infantiles sigues haciendo?", 
-" Si fueras ciego, ¿quién sería tu perro guía?", 
-" ¿Qué es lo que más te impresiona?", 
-" Si se le permitiera usar solo 3 palabras durante el resto de la noche a partir de ahora, ¿cuál sería?", 
-" Si fueras un dictador, ¿qué ley promulgarías primero?", 
-"Si vivieras durante la era nazi, ¿quién serías?", 
-"¿Cuál fue la experiencia más vergonzosa en la escuela / tiempo de estudio / educación / el año pasado?", 
-"¿Cuál es el mayor error de tu vida?", 
-"¿Qué no harías nunca, incluso si supieras que solo te quedan 12 horas de vida?", 
-" ¿Qué delitos ha cometido?", 
-" Cuéntame un secreto de tu infancia.", 
-" ¿Cuál es su mayor representante (secreto)?", 
-" ¿Qué quieres hacer conmigo… ( x persona), si luego puedes borrar su memoria (él,…)?", 
-" ¿Qué es lo peor que le has hecho a alguien?", 
-" ¿Quién te gusta más?", 
-"¿Alguna vez te has enamorado de alguno de los presentes?", 
-" Si fueras un vampiro, ¿a cuál de nosotros morderías ahora?", 
-" ¿Ha defecado alguna vez en público?", 
-" ¿Cuál es tu fantasía más oscura?", 
-" ¿Qué es lo mejor que has tenido con alguien más?", 
-" ¿Cuál es el mayor desvío para ti?", 
-" ¿Qué es lo que más te gusta de tu cuerpo y qué es lo más feo?", 
-" ¿A quien te gustaría ver desnuda?", 
-" ¿Quién en esta ronda puede enamorarte?", 
-" ¿Alguna vez has tenido un sueño erótico donde sucedió alguien de este grupo?", 
-" Si te vas a tatuar en el área genital, ¿que habrá allí?", 
-" ¿Qué es más importante en una relación: el sexo o el amor?", 
-" ¿Crees que el sexo es genial, bueno, bueno, divertido a veces, o realmente no te importa?", 
-" ¿Qué te hace realmente amar?", 
-"¿Cuántas veces a la semana / mes tiene relaciones sexuales y con qué frecuencia desea tener relaciones sexuales?", 
-" ¿Con cuántas parejas sexuales te has acostado?",
-" ¿Qué parte del cuerpo te hace más?", 
-" ¿Cómo, dónde y con quién estuviste primero?", 
-" ¿Qué importancia tienen para ti los juegos previos prolongados?", 
-" ¿Qué debe hacer un hombre o una mujer para seducirte?", 
-" ¿Alguna vez has tenido sexo con un buen amigo?", 
-" ¿Alguna vez ha tenido relaciones sexuales con alguno de estos grupos, excepto con su pareja?", 
-"¿Qué animal se adapta mejor a ti y por qué?", 
-" ¿Cuál es tu peor cita?", 
-" ¿A quién quieres besar ahora?", 
-" ¿Cuál es tu oscura fantasía secreta?", 
-" ¿Prefieres tatuarte el culo o perforarte la lengua?", 
-" ¿Eres siempre leal?", 
-" ¿Tienes un enamoramiento adolescente?", 
-" ¿De qué persona te enamoraste?", 
-" ¿Con qué celebridad te gustaría salir?", 
-" ¿Cuál fue el momento más embarazoso de tu vida?", 
-" ¿Qué boca te gusta más del grupo de aquí?", 
-" ¿Qué jugador tiene la mano más hermosa?", 
-" ¿Dónde fue tu primer beso?", 
-" ¿A quién del grupo te gustaría besar más?", 
-" ¿Quién en la mesa es quizás el más divertido?", 
-" ¿Cuál es el mayor error de tu vida?", 
-" ¿Te pasó algo vergonzoso en una cita?", 
-" ¿Ha estado alguna vez en contacto con drogas?", 
-" ¿A qué persona quieres besar ahora?", 
-" ¿Cuándo fue la última vez que estuvo borracho?", 
-" ¿Alguna vez has hecho trampa en un examen escolar?", 
-" ¿Has robado algo en el pasado?", 
-" ¿Roncas por la noche?", 
-" ¿Cuales tu cancion favorita?", 
-" ¿Con qué jugadores comerciará durante 1 semana y por qué?", 
-" Te mudaste a una isla desierta, ¿a quién te llevaste de aquí?", 
-" ¿A que temes más?", 
-" ¿Dónde te afeitas en todas partes?", 
-"¿Tienes un apodo?", 
-" ¿Miras en el baño antes de lavarte?", 
-"¿Quién te dio la peor angustia?", 
-" Cuantas veces te has besado", 
-"¿Qué es lo más embarazoso que te ha pasado?", 
-"¿Cuántos chicos / chicas has besado?", 
-"¿De quien estas enamorado(a) ?", 
-"Que estrella te gusta", 
-"¿Empezaste algo con XY (insertar nombre)?", 
-"Alguna vez has robado algo?"
+"لو قررت تقفل جوالك يوم كامل مين تتوقع أنه يفتقدك ؟",
+"اكثر كذبة تقولها ؟",
+"شيء مستحيل انك تاكله ؟",
+"ما السيء في هذه الحياة ؟",
+"هل لديك الاستعداد القيام ببعض أمور المنزل لمساعدة الأم أو الزوجة؟",
+"اعلى نسبة جبتها بحياتك الدراسية ؟",
+"ما هو الشيء الذي تخاف أن تفقده؟",
+" إذا كان لديك الفرصة لتغيير شيء واحد فقط في حياتك، فماذا سوف تغير؟", 
+"مرة سويت جميل و نكره شخص ؟ ", 
+" هل سبق ورسبت في المدرسة؟ وكم عدد المرات؟",
+"تنسد نفسك عن الاكل لو زعلت ؟ ",  
+" إذا تم إيداعك في مشفى المجانين خطئًا، فكيف سوف تثبت لهم أنك عاقل؟", 
+"تعتقد اشباهك الاربعين عايشين حياة حلوة ؟ ", 
+"من الشخص الاقرب لقلبك؟. ", 
+" منشن شخصين تحسهم نفس الاسلوب او الشخصية ..", 
+" كلمه لشخص خانك!؟.",
+ "لو حياتك عبارة عن كتاب .. وش بيكون اسمه ؟ ",
+ " اذا انسجنت وش تتوقع بتكون التهمة الي عليك ؟", 
+" هل تؤمن بالسحر والحسد؟ ولماذا؟", 
+"تترك احد عشان ماضيه سيء ؟ ", 
+"اشياء م تسويها غير اذا كنت مروق ؟ ",
+ " أيهما تفضل، العقل أم القلب؟",
+ " شخصية تقهرك ؟",
+ " منشن.. شخص تقوله  *انت أسطورة* ",
+ "ما هو أكثر شيء ترغب في نسيانه؟", 
+ "شعور ودك يموت ؟ ",
+ "هل تستطيع أن تعيش بدون أصدقاء؟ ",
+ " التاريخ المنتظر بالنسبة لك ؟", 
+" وش اسم الحي الي ساكن فيه ؟", 
+"هل ترى نفسك شخص اجتماعي أم انطوائي؟ ", 
+"شخصية كرتونية تأثرت فيها وانت صغير ؟ ",
+ " ‏ماذا ستختار من الكلمات لتعبر لنا عن حياتك التي عشتها الى الآن؟",
+ " منشن : شخص تحس انه نكبه ؟",
+ " من هو آخر شخص تفكر به قبل أن تنام؟",
+ "مين اقرب شخص لك بالعائلة ؟ ", 
+ "ما هو أكثر شيء يخيفك؟ ",
+ " اغنية ناشبه في مخك ؟",
+ "من هم أصدقائك المقربين منك؟ ", 
+" شيء حلو صار لك اليوم ؟", 
+" أغمض عينيك ما هو المكان الذي تخيلت نفسك فيه؟", 
+" جربت الشهرة او تتمناها ؟",
+ " هل يمكنك أن تضحي بصديق عمرك من أجل المصلحة؟",
+ " أغرب شي اشتهيت تأكله فجأة ؟",
+ " التاريخ المنتظر بالنسبة لك ؟",
+ " ما هي أكثر صفة تكرهها في صديقك المقرب؟", 
+ "وش اسمك؟",
 
-] 
+"حرف تحبه ؟",
+
+"اكثر شيء تحس انه مات ف مجتمعنا؟",
+
+"القصيرآت دايم حلوات تتفق .؟",
+
+"إذا وجدت ورقة بيضاء فماذا ترسم لتعبر عن حالتك النفسية؟",
+
+"شهر من أشهر العام له ذكرى جميلة معك؟",
+
+"قل حقيقه عنك ؟",
+
+"من اصدق في الحب الولد ولا البنت؟",
+
+"كلمات ماتستغني عنها بسوالفك؟",
+
+"ما هو الشيء الذي تخاف أن تفقده؟",
+
+"أكثر صفة تكرهها في المرأة؟",
+
+"أكثر ماده تحبها دراسياً والسبب؟",
+
+"تسامح شخص وجع قلبك ؟",
+
+"عادة سيئة لا يمكنك الإقلاع عنها، ما هي؟",
+
+"عاجبك وجودك في التلي ولا تتمنى تحذفة.؟",
+
+"شعورك الحالي في جملة؟",
+
+"محادثة ولا مكالمة ؟",
+
+"وش نوع الأفلام اللي تحب تتابعه؟",
+
+"هل أنت مع الخطبة عن حب أم مع الخطبة عن طريق الأهل؟",
+
+"منشن شخص سوالفه حلوه ؟",
+
+"هل تؤمنين بالحب من أول نظرة؟",
+
+"كم من عشرة تحب الاطفال ؟",
+
+"آخر خبر سعيد، متى وصلك؟",
+
+"من الشخص الاقرب لقلبك؟",
+
+"هل ترى نفسك شخص ذو إرادة؟",
+
+"ـ هالفترة أحس اني محتاج ....؟",
+
+"عمرك بكيت على شخص مات في مسلسل ؟",
+
+
+"هل يمكن أن تكره شخص كنت تحبه؟", 
+
+"أغنية عالقة في ذهنك هاليومين؟",
+
+"أكثر مكان تشعر به بالأمان والراحة؟",
+
+"ارسل اخر صورة فـ الالبوم ..",
+
+"جملة من كتاب لا تنساها.؟",
+
+"هل تقدمت للزواج من فتاة من قبل ورفضتك؟",
+
+"أكثر مكان تشعر به بالأمان والراحة؟",
+
+"اكثر شيء تخاف منه ؟",
+
+"اذا غلطت وعرفت انك غلطان تحب تعترف ولا تجحد؟",
+
+"كيف تحد الدولة من الفقر المُتزايد.؟",
+
+"ما هي مواصفات الصديق الحقيقي في نظرك؟",
+
+"أتمنى له كسراً لاجبر له عبارة عميقة هل تمنيتها لأحد.؟",
+
+"مع او ضد : اكثر من يحلون مشاكل الناس ، هم اكثر الناس لديهم مشاكل ؟",
+
+"افضل هديه ممكن تناسبك؟",
+
+"هل تقبل الارتباط بشخص فقير لكنه شديد الجمال؟",
+
+"من طلاسم لهجتكم ؟",
+
+"جربت احد يعطيك بلوك وانت تكتب له ؟",
+
+"أكثر جملة أثرت بك في حياتك؟",
+
+"إذا خيروك أن تُعيد تسمية نفسك فهل تقبل باسمك أم تقوم بتغييره؟",
+
+"هل تؤمن بوجود الصداقة الحقيقية؟",
+
+"هل وقعت في حب شخص من مواقع التواصل الإجتماعي؟",
+
+"كمل : النفس تميل لـ ... ؟",
+
+"جربت شعور احد يحبك بس انت متكدر تحبه؟",
+
+"كلمة تقولها لكل شخص منافق.؟",
+
+"من هو أكثر شخص تفكر به؟",
+
+"هل تجرأ على أن تذكر أكثر صفة تكرهها بك؟",
+
+"حزين ولا مبسوط ؟",
+
+"مع أو ضد لو كان خيراً لبقئ.؟",
+
+"هل ترى نفسك شخص ذو إرادة؟", 
+" وما دليلك على ذلك؟",
+
+"هل تستطيع أن تعيش بدون أصدقاء؟",
+
+"ما هو أغرب موقف مضحك تعرضت له في حياتك؟",
+
+"قوة الاستيعاب عندك من 10",
+
+"اذكر موقف ماتنساه بعمرك؟",
+
+"اغبى كذبه صدقتها بطفولتك؟",
+
+"هل فكرت مسبقًا في الانتقام ممن ظلمك؟",
+
+"كم ساعة تنام في اليوم؟",
+ 
+"مع او ضد : السفر يصلح ما افسده الدهر ؟",
+
+"افضل ايام الاسبوع عندك🔖؟",
+
+"‏- لو خيروك، الزواج بمن تُحب 💍 أو تأخذ مليون دولار💰",
+
+"على نياتكُم تُرزقون منشن تيكن ينطبق علية هذا الشيء.؟",
+
+"هل يمكنك أن تذكر لي معلومة لا يعرفها عنك أحد؟",
+
+"مين المغني المفضل عندك ؟",
+
+"كيف تتعامل مع الشخص المُتطفل ( الفضولي ) ؟",
+
+"موقف غير حياتك؟",
+
+"هل تعتقد أن حبيبتك / حبيبك يفكر بك الآن؟", 
+
+"إذا كان لديك عصا سحرية، ماذا ستفعل بها؟",
+
+"عمرك بكيت على شخص مات في مسلسل ؟",
+
+"كم تحتاج من وقت لتثق بشخص؟",
+
+"إذا تم إيداعك في مشفى المجانين خطئًا، فكيف سوف تثبت لهم أنك عاقل؟",
+
+"حيوانك المفضل؟",
+
+"ما هو أكثر موقف يمكن أن يجعلك سعيد طوال اليوم؟",
+
+"خُلق يجذبك بالناس ؟",
+
+"اشمر مقطع من اغنيه متطلع منراسك؟",
+
+"شعورك لما تشوف صورك وأنت صغير ؟",
+
+"ردة فعلك لمن يتجاهلك بالرد متعمد؟",
+
+"لديك ورقة بيضاء وقلم، ماذا سوف تكتب بها؟",
+
+"كم عدد الصور بجوالك ؟",
+
+"ايهم اصدق نظرة العين او نبرة الصوت ؟",
+
+"جابو طاري شخص تكره عندك تشاركهم ولا تمنعهم.؟",
+
+"شيء عندك اهم من الناس؟",
+
+"الاسود او الأبيض.؟",
+
+"لو حياتك عبارة عن كتاب .. وش بيكون اسمه ؟",
+
+"وش الشيء الي تطلع حرتك فيه و زعلت ؟",
+
+"هل لديك الاستعداد القيام ببعض أمور المنزل لمساعدة الأم أو الزوجة؟",
+
+"هل من الممكن أن تضر شخصاً لمجرد أنك تكرهه؟",
+
+"ما هو أكثر اسم دلع تكرهه؟",
+
+"شكلك يعطي لأي جنسية ؟",
+
+"ماهي الهدية التي تتمنى أن تنتظرك يومًا أمام باب منزلك؟",
+
+"هل سبق وأن رسبتِ في الاختبارات؟",
+
+"إيموجي يعبّر عن مزاجك الحالي؟",
+
+"ا هو أكثر شيء تضيع وقت فراغك به؟", 
+
+"لو حياتك عبارة عن كتاب .. وش بيكون اسمه ؟",
+
+"وش الشيء الي تطلع حرتك فيه و زعلت ؟",
+
+"هل لديك الاستعداد القيام ببعض أمور المنزل لمساعدة الأم أو الزوجة؟",
+
+"هل من الممكن أن تضر شخصاً لمجرد أنك تكرهه؟",
+
+"ما هو أكثر اسم دلع تكرهه؟",
+
+"كم من عشره تعطي حظك ؟",
+
+"لو تم وضعك أما ثلاث خيارات ( المال، الصحة، الرضا) أيهما تختار؟",
+
+"هل يمكنك أن تصف الزواج بكلمة واحدة؟",
+
+"اسم ولد وبنت تحسهم لايقين على بعض ؟",
+
+"احقر الناس هو من ...",
+
+"‏بالنسبه لك ، الطلعه الحلوه يحكمها المكان أو الأشخاص اللي معك .؟",
+
+"كلمة تنرفزك.؟",
+
+"هل يمكنك أن تتولى أمر الأعمال المنزلية أم أنك سوف تفشل في ذلك؟",
+
+"شيء مستحيل انك تاكله ؟",
+
+"ماذا لو عاد مُشتاقاً.؟",
+
+"كلامك للمتنمرين الكترونياً وواقعياً.؟",
+
+"هل يُمكن أن تكذب كذبة كبيرة للخروج من مأزق؟",
+
+"كلمة لشخص بعيد؟",
+
+"اكتب شطر من اغنية او قصيدة جا فـ بالك ؟",
+
+"عندك فوبيا او خوف شديد من شيء معين ؟",
+
+"لو كان هناك أمامك اختيارين أحدهما الزواج والإستقرار معي هنا والآخر السفر والعمل بالخارج، أيهما تختار؟",
+
+"هل لديك فوبيا من شيء معين؟",
+
+"أغمض عينيك ما هو المكان الذي تخيلت نفسك فيه؟",
+
+"أخر رسالة بالواتس جاتك من مين ؟",
+
+"حسيت انك ظلمت شخص.؟",
+
+"هل يمكن لكي أن تكتفي قبل النزول من المنزل بغسيل الوجه فقط دون وضع الميكاب؟",
+
+"هل تؤمن بالحب من النظرة الأولى؟",
+
+"إذا دخلت مُسابقة وكسبت 5 مليون دولار ماذا تفعل بهم؟",
+
+"وش قبيلتك ؟",
+
+"كلمة غريبة من لهجتك ومعناها؟",
+
+"كم من الوقت تستغرق قبل الخروج من المنزل ؟",
+
+"من هي أكثر شخصية عامة مفضلة لديك؟",
+
+"ما هو أكثر شيء يمكنه أن يخطف النوم من عينك؟",
+  "هواية او تجربة كان ودك تستمر و تركتها ؟"
+
+]

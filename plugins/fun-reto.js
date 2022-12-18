@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
 //conn.reply(m.chat,`*┌────「 RETO 」─*\n*“${pickRandom(global.bucin)}”*\n*└────「 Mystic 」─*`, m)
-conn.sendHydrated(m.chat, `╭━━━━━[ 𝙍𝙀𝙏𝙊 😏 ]━━━━⬣\n*“${pickRandom(global.bucin)}”*\n╰━━━━━━[ ${vs} ]━━━━━⬣`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, `╭━━━━━[ ريتو 😏 ]━━━━⬣\n*“${pickRandom(global.bucin)}”*\n╰━━━━━━[ ${vs} ]━━━━━⬣`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙊𝙩𝙧𝙖 𝙫𝙚𝙯 | 𝘼𝙜𝙖𝙞𝙣 🧐', `${usedPrefix}reto`],
 ['𝙏𝙤𝙥𝙨 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 🏆', `${usedPrefix}top`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `${usedPrefix}menu`]
@@ -96,7 +96,7 @@ global.bucin = [
 "Envie el emoji '🦄💨' cada vez que escriba en un grupo 1 día", 
 "diga '¡Bienvenido a Quién quiere ser millonario!' a todos los grupos que tienes", 
 "canta el coro de la última canción que tocaste", 
-"Envia un audio de voz a tu ex / enamorado / novia, dile hola (nombre), quiero llamar, solo un momento. Te Extraño🥺👉🏼👈🏼 ", 
+"أرسل صوتا صوتيا إلى صديقك السابق / صديقك / صديقتك ، قل مرحبا (الاسم) ، أريد الاتصال ، لحظة فقط. اشتقت لك🥺👉🏼👈🏼 ", 
 "Dile a la gente al azar: Primero me dijeron que era tu gemelo, nos separamos y luego me sometí a una cirugía plástica. Y esto", 
 "¡Haz 1 rima para el primer jugador!", 
 "cuenta tu propia versión de cosas vergonzosas", 
