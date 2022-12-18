@@ -66,14 +66,14 @@ global.db.chain = chain(global.db.data)
 }
 loadDatabase()
 
-global.authFile = `GataBotSession`
+global.authFile = `YunaBotSession`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
 printQRInTerminal: true,
 auth: state,
 logger: P({ level: 'silent'}),
-browser: ['GataBot-MD','Edge','1.0.0']
+browser: ['YunaBot-MD','Edge','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -354,7 +354,7 @@ const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
   //logger: pino({ level: 'trace' })
-  browser: ['GataBot-MD','Edge','1.0.0'] //Nombre de la sesión 
+  browser: ['YunaBot-MD','Edge','1.0.0'] //Nombre de la sesión 
 }
 
 global.conn = makeWASocket(connectionOptions)
