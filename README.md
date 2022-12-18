@@ -53,7 +53,13 @@ npm update
 npm start
 ```
 ----
+------------------
 
+### `—◉ 💥 تفعيل في كويب 💥`
+
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/ahmed1p7/YUNABOT-MD&branch=master&name=yunabot-md)
+
+------------------
 ----
 ### حول بوت  <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
 ```bash
