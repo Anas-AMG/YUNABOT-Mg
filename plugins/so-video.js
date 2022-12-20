@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 let handler = async (m, { conn, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar`
 let url = pack[Math.floor(Math.random() * pack.length)]
@@ -31,3 +31,4 @@ global.pack = [
   "https://telegra.ph/file/482583ae42ee19fba5fc0.mp4",
   "https://telegra.ph/file/da6a8538ad3a99d0df8da.mp4",
 ]
+*/
